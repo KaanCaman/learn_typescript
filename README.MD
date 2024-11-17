@@ -20,5 +20,5 @@ tsc init
 
 ## Source
 
-[typescriptlang.org](https://www.typescriptlang.org/docs/)
-[course](https://www.youtube.com/watch?v=WdcZE4DkOuE)
+- [typescriptlang.org](https://www.typescriptlang.org/docs/)
+- [course](https://www.youtube.com/watch?v=WdcZE4DkOuE)
