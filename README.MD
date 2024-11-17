@@ -5,13 +5,13 @@
 - Add Typescript dev dependencies
 
 ```sh
-npm install -D typescript 
+npm install -D typescript
 ```
 
 - Initializing typescript
 
 ```sh
-tsc init 
+tsc init
 ```
 
 ## Github
@@ -21,3 +21,4 @@ tsc init
 ## Source
 
 [typescriptlang.org](https://www.typescriptlang.org/docs/)
+[course](https://www.youtube.com/watch?v=WdcZE4DkOuE)
