@@ -25,20 +25,19 @@ console.log(typeof arr); // 'object'
 console.log(typeof nil); // 'object'
 console.log(typeof obj); // 'object'
 
-
 // ANY and UNKNOWN types are dynamic types and their values can change at runtime.
+// ANY ve UNKNOWN türleri dinamik türlerdir ve değerleri çalışma zamanında değişebilir.
+
 // any : can be assigned directly to a variable of a certain type.
+// any : belirli bir tipteki değişkene doğrudan atanabilir.
 let myNumber: number;
 let myAny: any = "this is string";
 
 myNumber = myAny;
 
 // unknown: cannot be assigned to a variable of a certain type.
-let myBoolean:boolean;
-let myUnknown:unknown = 'this is string';
+// unknown: belirli bir tipteki değişkene atanamaz.
+let myBoolean: boolean;
+let myUnknown: unknown = "this is string";
 
-// myBoolean = myUnknown; // Type 'unknown' is not assignable to type 'boolean'
-
-
-
-
+// myBoolean = myUnknown; // Type 'unknown' is not assignable to type 'boolean' | 'unknown' tipi 'boolean' tipine atanamaz'unknown' tipi 'boolean' tipine atanamaz

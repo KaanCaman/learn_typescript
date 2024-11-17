@@ -1,5 +1,6 @@
 // mapped type
 // is a type type that we create by taking another key and specifying a new variable type.
+// başka bir type alıp yeni bir değişken türü belirterek oluşturduğumuz bir özelliktir.
 
 type Prop = "a" | "b" | "c";
 
@@ -17,6 +18,7 @@ const newType: NewType = {
 // example 2 :
 
 // Create another type by taking a type as a generic type and manipulating it
+// bir türü genel bir tür olarak alıp onu manipüle ederek başka bir tür oluşturmak
 type Prop2 = {
   id?: number;
   name?: string;

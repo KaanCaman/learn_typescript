@@ -1,6 +1,7 @@
 // utility types
 
 // partial : Makes the properties inside the wrapped type optional
+// partial : Sarılmış tipin içindeki özellikleri isteğe bağlı hale getirir
 interface User {
   id: number;
   name: string;
@@ -13,6 +14,7 @@ const myPartial: Partial<User> = {
 };
 
 // required : makes the properties of an optional type required
+// required : isteğe bağlı bir türün özelliklerini zorunlu kılar
 interface Vehicle {
   brand?: string;
   model?: string;
@@ -24,6 +26,7 @@ const myRequired: Required<Vehicle> = {
 };
 
 //readonly : makes the type you wrap only readable
+//readonly : sardığınız türü sadece okunabilir yapar
 interface FootballTeam {
   name: string;
   dateOfFoundationYear: number;
@@ -36,6 +39,7 @@ let myReadOnly: Readonly<FootballTeam> = {
 // myReadOnly.dateOfFoundationYear = 2222; //Cannot assign to 'dateOfFoundationYear' beacause it is read-only property.
 
 //pick : allows you to select the keys you want from the type you are wrapping
+//pick : sardığınız türden istediğiniz tuşları seçmenizi sağlar
 interface PersonalComputer {
   brand: string;
   cpuCoreCount: number;
@@ -50,6 +54,7 @@ const myPick: Pick<PersonalComputer, "brand" | "price"> = {
 };
 
 //Omit : allows us to remove the properties inside the type you are wrapping
+//Omit : sardığınız türün içindeki özellikleri kaldırmamızı sağlar
 interface Bank {
   name: string;
   branch: string;

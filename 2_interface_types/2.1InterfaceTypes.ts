@@ -26,12 +26,20 @@ console.log(myTypePoint); // {a:4,k:2}
 // The big difference is that type cannot be reopened
 // for new property but interface is always extandable.
 
+// Interface vs Type
+// Tip adlandırma ve Arayüz çok benzerdir.
+// Çoğu durumda birini diğerinin yerine kullanabilirsiniz,
+// interface'in sunduğu tüm özellikler type için de geçerlidir.
+// En büyük fark, type tanımlandıktan sonra tekrardan özellik eklenmez,
+// interface'in ise her zaman genişletilebilir olmasıdır.
+
 // define Animal
 interface Animal {
   name: string;
 }
 
 // We can extend interface.
+// Arayüzü genişletebiliriz.
 // define Bear extends Animal
 interface Bear extends Animal {
   honey: boolean;
@@ -42,6 +50,7 @@ const bear: Bear = { name: "Kaan", honey: true };
 console.log(bear.name, bear.honey); // Kaan true
 
 // New fields can also be added to the interface
+// Arayüze yeni alanlar da eklenebilir
 interface InterWindow {
   title: string;
 }
@@ -60,7 +69,8 @@ type Vehicle = {
   wheels: number;
 };
 
-//We can extend type with Intersection &
+//We can extend type with Intersection [&]
+//Kesişim [&] ile türü genişletebiliriz
 // define Motorbike extends Vehicle
 type Motorbike = Vehicle & {
   clutch: string;
@@ -71,6 +81,7 @@ const motorbike: Motorbike = { wheels: 2, clutch: "by hand" };
 console.log(motorbike.wheels, motorbike.clutch); //  2, by hand
 
 // new fields cannot be added
+// yeni alanlar eklenemez
 type TypeWindow = { title: string };
 
 // type TypeWindow = { ts: string };// Duplicate identifer
